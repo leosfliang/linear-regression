@@ -28,8 +28,8 @@ Teams %>% filter(yearID %in% 1961:2001) %>%
 
 #winrate vs fielding errors
 Teams %>% filter(yearID %in% 1961:2001) %>%
-  mutate(E_per_game = E / G, R_per_game = R/ G) %>%
-  ggplot(aes(E_per_game, R_per_game)) +
+  mutate(E_per_game = E / G, W_per_game = W/ G) %>%
+  ggplot(aes(E_per_game, W_per_game)) +
   geom_point(alpha = 0.5)
 
 # TRIPLES VS DOUBLES
